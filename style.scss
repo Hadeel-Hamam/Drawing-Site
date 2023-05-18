@@ -1,0 +1,405 @@
+$backcolor: black;
+$fontcolor: white;
+
+* {
+  box-sizing: border-box;
+  color: $fontcolor;
+  font-style: italic;
+}
+
+.dark {
+  background-image: linear-gradient(to right, black, rgb(105, 27, 92), rgb(33, 32, 32));
+}
+
+.sidenav {
+  background-color: rgb(24 24 24 / 57%);
+  width: 120px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  position: fixed !important;
+
+  i {
+    font-size: 25px;
+  }
+
+  .nav-items {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 3%;
+  }
+
+  .nav-items:hover {
+    background-color: $backcolor;
+  }
+}
+
+.main {
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // align-content: center;
+  // justify-content: center;
+  text-align: center;
+  padding: 5% 5% 0 5%;
+  color: $fontcolor;
+  margin-left: 120px;
+
+  #about {
+    text-align: center;
+    p{
+      text-align: left;
+    }
+
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  #about,
+  #drawings,
+  #photos,
+  #contact,
+  .me {
+    margin: 5% 0 5% 0;
+  }
+
+  // #drawings {
+  //   margin-top: 100px;
+  // }
+
+
+}
+
+
+.art {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  a {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+  }
+
+  .pic {
+    height: 351px;
+    background-size: cover;
+    width: calc(98% / 4);
+    border-radius: 10px;
+    margin-bottom: 10%;
+
+    .ho {
+      opacity: .5;
+    }
+
+    .ho:hover {
+      opacity: 1;
+    }
+  }
+  .modal-content{
+    background-color: #170818;
+    margin: 35% 50% 0 0;
+  }
+  .modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  // div {
+  //   div:hover {
+  //     background: rgba(0, 0, 0, 0.308);
+  //   }
+
+  //   div {
+  //     width: 100%;
+  //     height: 100%;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //     background-color: rgba(0, 0, 0, 0.5);
+  //   }
+  // }
+}
+
+.moreart {
+  width: 100%;
+
+  .imgs {
+    width: 90%;
+    left: 5%;
+  }
+
+  img {
+    height: 300px;
+    // background-size: cover;
+    object-fit: cover;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+}
+
+// .num1 {
+//   background-image: url(./MyPaint/1675187004898.jpg);
+// }
+
+// .num2 {
+//   background-image: url(./MyPaint/20220928_003021.jpg);
+// }
+
+// .num3 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٨١٢_٠٢٢١٤٧.jpg);
+// }
+
+// .num4 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٧٢٧_٠١٣٩١٩.jpg);
+// }
+
+// .num5 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٧١٩_٢٣١٦٥٩.jpg);
+// }
+
+// .num6 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٧٠١_١٧٣٠٠٠.jpg);
+// }
+
+// .num7 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٦٢١_١٧٤١٢٢.jpg);
+// }
+
+// .num8 {
+//   background-image: url(./MyPaint/٢٠٢٢٠٤٠٩_٠٢٢٦٣٨.jpg);
+// }
+
+// .num9 {
+//   background-image: url(./MyPaint/٢٠٢١١١٢٦_١٩٢٤٣٣.jpg);
+// }
+
+// .num10 {
+//   background-image: url(./MyPaint/٢٠٢١٠٨٠٥_٢٣٣٩٣١.jpg);
+// }
+
+// .num11 {
+//   background-image: url(./MyPaint/PicsArt_10-10-06.38.33.jpg);
+// }
+
+// .num12 {
+//   background-image: url(./MyPaint/IMG_٢٠٢٠٠١٣٠_٢١٣٩٥٤.jpg);
+// }
+
+footer{
+  background-color: #2f2931a4;
+  padding: 5%;
+}
+.footer-32892 .subscribe {
+  position: relative;
+}
+
+.footer-32892 .subscribe .form-control {
+  background-color: #292b31;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 30px;
+  height: 55px;
+  padding-left: 30px;
+  padding-right: 130px;
+  border: none;
+  color: #fff;
+}
+
+.footer-32892 .subscribe .form-control::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control:-moz-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .quick-info li {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-32892 .quick-info li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-32892 .quick-info li .icon {
+  font-size: 20px;
+  color: #f88020;
+}
+.img-fluid{
+  margin-bottom: 7%;
+}
+
+.footer-32892 .subscribe .btn-submit {
+  background: #6e2f56;
+  height: 47px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#photos {
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    // align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1%;
+
+    // overflow: hidden;
+    aside {
+      overflow: hidden;
+    }
+
+    img {
+      object-fit: cover;
+      // padding-top: 3%;
+      width: 100%;
+      transition: all 2s;
+      border-radius: 2%;
+    }
+
+    img:hover {
+      // transform: rotate(5deg);
+      scale: (1.1);
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .sidenav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 10px;
+    background-color: rgba(24, 24, 24, 0.87);
+
+    img {
+      height: 100%;
+    }
+
+  }
+
+  .main {
+    width: 100%;
+    margin: 0%;
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .art {
+    .pic {
+      height: 300px;
+      background-size: cover;
+      width: 48%;
+      border-radius: 10px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .moreart {
+    img {
+      height: 100px;
+      // background-size: cover;
+      width: 20%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .art {
+    .pic {
+      height: 250px;
+      background-size: cover;
+      width: 30%;
+      border-radius: 10px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .moreart {
+    img {
+      height: 150px;
+      // background-size: cover;
+      object-fit: cover;
+      width: 20%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+
+    }
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 940px) {
+  .art {
+    .pic {
+      height: 280px;
+      background-size: cover;
+      width: 30%;
+      border-radius: 10px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .moreart {
+    img {
+      height: 180px;
+      // background-size: cover;
+      width: 20%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      object-fit: cover;
+
+    }
+  }
+}

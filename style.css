@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-style: italic;
+}
+
+.dark {
+  background-image: linear-gradient(to right, black, rgb(105, 27, 92), rgb(33, 32, 32));
+}
+
+.sidenav {
+  background-color: rgba(24, 24, 24, 0.57);
+  width: 120px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  position: fixed !important;
+}
+.sidenav i {
+  font-size: 25px;
+}
+.sidenav .nav-items {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 3%;
+}
+.sidenav .nav-items:hover {
+  background-color: black;
+}
+
+.main {
+  text-align: center;
+  padding: 5% 5% 0 5%;
+  color: white;
+  margin-left: 120px;
+}
+.main #about {
+  text-align: center;
+}
+.main #about p {
+  text-align: left;
+}
+.main #about h3 {
+  text-align: center;
+}
+.main #about,
+.main #drawings,
+.main #photos,
+.main #contact,
+.main .me {
+  margin: 5% 0 5% 0;
+}
+
+.art {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.art h3 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.art a {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 5%;
+  color: white;
+  text-decoration: none;
+}
+.art .pic {
+  height: 351px;
+  background-size: cover;
+  width: 24.5%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+.art .pic .ho {
+  opacity: 0.5;
+}
+.art .pic .ho:hover {
+  opacity: 1;
+}
+.art .modal-content {
+  background-color: #170818;
+  margin: 35% 50% 0 0;
+}
+.art .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.moreart {
+  width: 100%;
+}
+.moreart .imgs {
+  width: 90%;
+  left: 5%;
+}
+.moreart img {
+  height: 300px;
+  object-fit: cover;
+  width: 20%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+footer {
+  background-color: rgba(47, 41, 49, 0.6431372549);
+  padding: 5%;
+}
+
+.footer-32892 .subscribe {
+  position: relative;
+}
+
+.footer-32892 .subscribe .form-control {
+  background-color: #292b31;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 30px;
+  height: 55px;
+  padding-left: 30px;
+  padding-right: 130px;
+  border: none;
+  color: #fff;
+}
+
+.footer-32892 .subscribe .form-control::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control::-moz-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .subscribe .form-control:-moz-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-32892 .quick-info li {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-32892 .quick-info li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-32892 .quick-info li .icon {
+  font-size: 20px;
+  color: #f88020;
+}
+
+.img-fluid {
+  margin-bottom: 7%;
+}
+
+.footer-32892 .subscribe .btn-submit {
+  background: #6e2f56;
+  height: 47px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#photos div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+#photos div aside {
+  overflow: hidden;
+}
+#photos div img {
+  object-fit: cover;
+  width: 100%;
+  transition: all 2s;
+  border-radius: 2%;
+}
+#photos div img:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .sidenav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 10px;
+    background-color: rgba(24, 24, 24, 0.87);
+  }
+  .sidenav img {
+    height: 100%;
+  }
+  .main {
+    width: 100%;
+    margin: 0%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .art .pic {
+    height: 300px;
+    background-size: cover;
+    width: 48%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  }
+  .moreart img {
+    height: 100px;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .art .pic {
+    height: 250px;
+    background-size: cover;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  }
+  .moreart img {
+    height: 150px;
+    object-fit: cover;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 769px) and (max-width: 940px) {
+  .art .pic {
+    height: 280px;
+    background-size: cover;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  }
+  .moreart img {
+    height: 180px;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
